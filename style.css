@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0d0b17;
+    color:#fff;
+}
+
+/* HEADER */
+
+header{
+    background:#17122d;
+    padding:20px;
+    border-bottom:2px solid #7c3aed;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo-area{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#a855f7,#6d28d9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(168,85,247,.5);
+}
+
+.logo-area h1{
+    font-size:30px;
+}
+
+.logo-area p{
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(180deg,#17122d,#0d0b17);
+}
+
+.hero h2{
+    font-size:40px;
+    color:#c084fc;
+}
+
+.hero p{
+    color:#cfcfcf;
+    margin-top:15px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:#1b1633;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 30px rgba(124,58,237,.25);
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2b214a;
+    color:white;
+    font-size:15px;
+}
+
+input:focus{
+    outline:2px solid #8b5cf6;
+}
+
+/* DIAMOND */
+
+.diamond-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.diamond{
+    background:#2b214a;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.diamond:hover{
+    transform:translateY(-5px);
+    border-color:#8b5cf6;
+}
+
+.diamond.active{
+    border-color:#c084fc;
+    background:#38235f;
+}
+
+/* PAYMENT */
+
+.payment{
+    margin-top:30px;
+}
+
+.dana-box{
+    background:#251d42;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #7c3aed;
+}
+
+.dana-box h2{
+    color:#7dd3fc;
+}
+
+.dana-box h1{
+    margin:10px 0;
+    letter-spacing:2px;
+    color:#fff;
+}
+
+.dana-box button{
+    margin-top:10px;
+    background:#3b82f6;
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(90deg,#7c3aed,#9333ea);
+    margin-top:20px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 20px rgba(168,85,247,.5);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    color:#999;
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero h2{
+    font-size:28px;
+}
+
+.logo-area h1{
+    font-size:22px;
+}
+
+.diamond-grid{
+    grid-template-columns:1fr;
+}
+
+}
