@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BobohoStore - Mobile Legends</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#131124;
+color:white;
+}
+
+header{
+background:#1d1735;
+padding:20px;
+text-align:center;
+border-bottom:2px solid #7c3aed;
+}
+
+.logo{
+font-size:38px;
+font-weight:bold;
+color:#a855f7;
+}
+
+.sub{
+color:#bbb;
+margin-top:8px;
+}
+
+.container{
+max-width:600px;
+margin:30px auto;
+padding:20px;
+}
+
+.card{
+background:#1f1836;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(124,58,237,.4);
+}
+
+.game{
+background:#2b214a;
+padding:20px;
+border-radius:12px;
+text-align:center;
+margin-bottom:20px;
+border:2px solid #a855f7;
+}
+
+.game h2{
+margin-top:10px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+background:#2b214a;
+color:white;
+}
+
+.nominals{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.nominal{
+background:#2b214a;
+padding:15px;
+border-radius:12px;
+text-align:center;
+cursor:pointer;
+transition:.3s;
+border:2px solid transparent;
+}
+
+.nominal:hover{
+border-color:#a855f7;
+}
+
+.payment{
+margin-top:20px;
+padding:15px;
+background:#2b214a;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:25px;
+background:#7c3aed;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#9333ea;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#888;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+<svg width="55" height="55" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#c084fc"/>
+<stop offset="100%" stop-color="#6d28d9"/>
+</linearGradient>
+</defs>
+
+<path d="M32 4
+L54 12
+V30
+C54 45 43 56 32 60
+C21 56 10 45 10 30
+V12
+Z"
+fill="url(#grad)"/>
+
+<text
+x="32"
+y="40"
+font-size="28"
+font-family="Arial"
+font-weight="bold"
+fill="white"
+text-anchor="middle">
+B
+</text>
+
+</svg>
+
+<span>BobohoStore</span>
+
+</div>
+
+<div class="sub">
+Top Up Mobile Legends Murah & Cepat
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<div class="game">
+
+<div style="font-size:70px;">🎮</div>
+
+<h2>Mobile Legends</h2>
+
+<p>Top Up Diamond Resmi</p>
+
+</div>
+
+<input
+type="text"
+placeholder="Masukkan User ID">
+
+<input
+type="text"
+placeholder="Masukkan Zone ID">
+
+<h3 style="margin-top:20px;">Pilih Diamond</h3>
+
+<div class="nominals">
+
+<div class="nominal">86 Diamond<br><b>Rp20.000</b></div>
+
+<div class="nominal">172 Diamond<br><b>Rp40.000</b></div>
+
+<div class="nominal">257 Diamond<br><b>Rp60.000</b></div>
+
+<div class="nominal">344 Diamond<br><b>Rp80.000</b></div>
+
+<div class="nominal">429 Diamond<br><b>Rp100.000</b></div>
+
+<div class="nominal">514 Diamond<br><b>Rp120.000</b></div>
+
+</div>
+
+<div class="payment">
+
+<b>Metode Pembayaran</b>
+
+<select style="width:100%;padding:12px;margin-top:10px;background:#1f1836;color:white;border:none;border-radius:10px;">
+
+<option>DANA</option>
+
+</select>
+
+</div>
+
+<button onclick="pesan()">
+
+BELI SEKARANG
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 BobohoStore
+
+</footer>
+
+<script>
+
+function pesan(){
+
+alert("Terima kasih telah melakukan pemesanan di BobohoStore.\n\nSilakan lanjutkan pembayaran menggunakan DANA.");
+
+}
+
+</script>
+
+</body>
+</html>
